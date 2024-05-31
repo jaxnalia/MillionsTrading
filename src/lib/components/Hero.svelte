@@ -19,19 +19,18 @@
           <span
             class="underline decoration-secondary decoration-4 md:decoration-[6px]"
           >
-            #1 Day Trading Course</span
+            #1 Trading Course</span
           >
-          on the internet.
-          <!-- <span
-            class="underline decoration-secondary decoration-4 md:decoration-[6px]"
-            >full-featured</span
-          >
-          <span> Sveltekit Boilerplate</span> -->
+          on the Web
         </div>
-        <div class="mt-6 md:mt-10 text-sm md:text-lg">
+        <div class="mt-6 md:mt-10 text-sm font-bold md:text-lg">
+          This all in one course is all you need to kick start your journey to
+          become a profitable trader from scratch!
+        </div>
+        <div class="mt-6 md:mt-10 text-sm md:text-xl">
           Hosted by <a href="http://x.com/bigjax_pls" class="link font-bold"
-            >Jack Sendall</a
-          >, streamed live on weekdays, London & New York session.
+            >Jack Simmonds</a
+          >, streamed live on weekdays during London & New York sessions
         </div>
         <div class="mt-6 md:mt-2">
           <Sparkles>

@@ -179,7 +179,7 @@
         >
           one-stop solution
         </span>
-        to dive into the world of trading.
+        to dive into the world of trading
       </div>
     </div>
 
