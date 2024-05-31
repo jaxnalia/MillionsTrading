@@ -31,14 +31,16 @@
         <div class="mt-6 md:mt-10 text-sm md:text-lg">
           Hosted by <a href="http://x.com/bigjax_pls" class="link font-bold"
             >Jack Sendall</a
-          >, Streamed Live on Weekdays, 12:00pm - 3:00pm London Time.
+          >, streamed live on weekdays, London & New York session.
         </div>
         <div class="mt-6 md:mt-2">
           <Sparkles>
-            <CheckoutButton
-              classes="btn btn-wide btn-lg btn-outline btn-primary btn-sm px-6 mt-3 mx-2"
-              >Enroll Now</CheckoutButton
-            >
+            <a href="/pricing">
+              <CheckoutButton
+                classes="btn btn-wide btn-lg btn-outline btn-primary btn-sm px-6 mt-3 mx-2"
+                >Enroll Now</CheckoutButton
+              >
+            </a>
           </Sparkles>
         </div>
         <div class="mx-auto mt-6 inline-flex items-center gap-2">
