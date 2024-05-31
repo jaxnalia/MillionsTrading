@@ -27,7 +27,7 @@
   {data.isActiveCustomer ? "Billing" : "Select a Plan"}
 </h1>
 
-<!-- {#if !data.isActiveCustomer} -->
+{#if !data.isActiveCustomer}
   <div class="mt-12">
     <Pricing {currentPlanId} callToAction="Choose Plan" center={false} />
   </div>
@@ -37,7 +37,7 @@
       <a href="/account/billing/manage" class="link">View past invoices</a>
     </div>
   {/if}
-<!-- {:else}
+{:else}
   <Settings
     title="Subscription"
     editable={false}
@@ -51,4 +51,4 @@
     editButtonTitle="Manage Subscripton"
     editLink="/account/billing/manage"
   />
-{/if} -->
+{/if}
