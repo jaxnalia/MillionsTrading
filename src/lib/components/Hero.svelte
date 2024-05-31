@@ -21,7 +21,7 @@
           >
             #1 Day Trading Course</span
           >
-          on the Internet.
+          on the internet.
           <!-- <span
             class="underline decoration-secondary decoration-4 md:decoration-[6px]"
             >full-featured</span
@@ -30,8 +30,8 @@
         </div>
         <div class="mt-6 md:mt-10 text-sm md:text-lg">
           Hosted by <a href="http://x.com/bigjax_pls" class="link font-bold"
-            >BigJax</a
-          > Live on Weekdays, Mon-Fri.
+            >Jack Sendall</a
+          > Live on Weekdays, Mon - Fri, 12:00pm - 3:00pm London Time.
         </div>
         <div class="mt-6 md:mt-2">
           <Sparkles>
@@ -40,6 +40,53 @@
               >Enroll Now</CheckoutButton
             >
           </Sparkles>
+        </div>
+        <div class="mx-auto mt-6 inline-flex items-center gap-2">
+          <div class="avatar-group -space-x-4 rtl:space-x-reverse">
+            <div class="avatar">
+              <div class="w-8">
+                <img src="https://i.pravatar.cc/64?u=0" alt="Profile" />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="w-8">
+                <img
+                  alt="example"
+                  src="https://plus.unsplash.com/premium_photo-1681319553238-9860299dfb0f?auto=format&fit=crop&q=80&w=2831&ixlib=rb-4.0.3"
+                  class="max-w-sm h-80 object-cover rounded-lg shadow-2xl"
+                />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="w-8">
+                <img src="https://i.pravatar.cc/64?u=2" alt="Profile" />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="w-8">
+                <img src="https://i.pravatar.cc/64?u=3" alt="Profile" />
+              </div>
+            </div>
+            <div class="avatar">
+              <div class="w-8">
+                <img src="https://i.pravatar.cc/64?u=4" alt="Profile" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-left">
+              <div class="rating">
+                <span class="mask mask-star-2 h-4 w-4 bg-yellow-400"></span>
+                <span class="mask mask-star-2 h-4 w-4 bg-yellow-400"></span>
+                <span class="mask mask-star-2 h-4 w-4 bg-yellow-400"></span>
+                <span class="mask mask-star-2 h-4 w-4 bg-yellow-400"></span>
+                <span class="mask mask-star-2 h-4 w-4 bg-yellow-400"></span>
+              </div>
+              <div class="text-sm font-medium text-base-content/80">
+                128+ like-minded students
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

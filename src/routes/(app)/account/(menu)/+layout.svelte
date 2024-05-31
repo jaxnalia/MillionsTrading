@@ -23,7 +23,13 @@
   <div class="drawer-content">
     <div class="navbar bg-base-100 lg:hidden">
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href="/">Millions Trading</a>
+        <a class="btn btn-ghost normal-case text-xl" href="/"
+          ><img
+            class="h-10"
+            alt="Millions Trading logo"
+            src="../../images/millionstrading.png"
+          /></a
+        >
       </div>
       <div class="flex-none">
         <div class="dropdown dropdown-end">
@@ -59,9 +65,14 @@
         <div
           class="normal-case menu-title text-xl font-bold text-primary flex flex-col"
         >
-          <a href="/" class="grow">Millions Trading</a>
+          <a class="btn btn-ghost normal-case text-xl" href="/"
+            ><img
+              class="h-12"
+              alt="Millions Trading logo"
+              src="../../images/millionsyellow.png"
+            /></a
+          >
           <label for="admin-drawer" class="lg:hidden ml-3"> &#x2715; </label>
-          
         </div>
       </li>
       <li>
@@ -83,7 +94,7 @@
               d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
             /></svg
           >
-          Home
+          Dashboard
         </a>
       </li>
       <li>

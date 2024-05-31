@@ -1,1 +1,1 @@
-export const WebsiteName: string = "Millions FX"
+export const WebsiteName: string = "Millions Trading"

@@ -1,11 +1,17 @@
 <script lang="ts">
-  import ThemeSwitcher from "./ThemeSwitcher.svelte";
+  import ThemeSwitcher from "./ThemeSwitcher.svelte"
 </script>
+
 <header>
-<div class="navbar bg-base-100 container mx-auto">
+  <div class="navbar bg-base-100 container mx-auto">
     <div class="flex-1">
-      <img alt="Svelteship logo" src="../../images/favicon.svg">
-      <a class="btn btn-ghost normal-case text-xl" href="/">Millions Trading</a>
+      <a class="btn btn-ghost normal-case text-xl" href="/"
+        ><img
+          class="h-12"
+          alt="Millions Trading logo"
+          src="../../images/millionsyellow.png"
+        /></a
+      >
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal px-1 hidden sm:flex font-bold text-lg">
