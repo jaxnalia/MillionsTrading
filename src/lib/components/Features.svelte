@@ -1,9 +1,9 @@
 <script lang="ts">
-const features = [
+  const features = [
     {
-      name: "Free to host",
+      name: "Daily Livestream",
       description:
-        "Instructions included for Cloudflare+Supabase. Free to start, and cost effective to scale.",
+        "Speak with Jack directly as he trades his 80% win-rate strategy on stream, and discuss trades taken and not taken.",
       link: "https://docs.svelteship.com",
       linkText: "Docs",
       newPage: true,
@@ -19,10 +19,10 @@ const features = [
 <path d="M17.5 9.74145C17.7095 9.53198 18.0491 9.53198 18.2586 9.74145C18.468 9.95092 18.468 10.2905 18.2586 10.5C18.0491 10.7095 17.7095 10.7095 17.5 10.5C17.2905 10.2905 17.2905 9.95092 17.5 9.74145Z" fill="#1C274C"/>`,
     },
     {
-      name: "User Auth",
+      name: "Trading Community",
       link: "/auth",
       description:
-        "Sign up, sign out, forgot password, email verification, and oAuth. Powered by Supabase Auth.",
+        "Access to an amazing community of like-minded traders, all looking to become the best trader they can possibly be.",
       svgContent: `<path
                   d="M14.2084 13.5521C16.3025 13.5521 18 11.8615 18 9.77606C18 7.6906 16.3025 6 14.2084 6C12.1144 6 10.4169 7.6906 10.4169 9.77606C10.4169 10.742 10.8578 11.4446 10.8578 11.4446L6.27264 16.011C6.0669 16.2159 5.77886 16.7486 6.27264 17.2404L6.8017 17.7673C7.00743 17.9429 7.52471 18.1888 7.94796 17.7673L8.56519 17.1526C9.18242 17.7673 9.88782 17.416 10.1523 17.0647C10.5932 16.45 10.0642 15.8353 10.0642 15.8353L10.2405 15.6597C11.087 16.5027 11.8277 16.011 12.0922 15.6597C12.5331 15.045 12.0922 14.4303 12.0922 14.4303C11.9159 14.079 11.5632 14.079 12.004 13.64L12.5331 13.113C12.9564 13.4643 13.8264 13.5521 14.2084 13.5521Z"
                   stroke="#1C274C"
@@ -174,64 +174,66 @@ const features = [
     },
   ]
 </script>
+
 <div class="min-h-[60vh]">
-    <div class="pt-20 pb-8 px-7">
-      <div class="max-w-lg mx-auto text-center">
-        <div
-          class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
-        >
-          Explore the Features
-        </div>
-        <div class="mt-6 text-xl font-bold">
-          And try them on this
-          <span
-            class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
-          >
-            fully functional demo
-          </span>
-        </div>
-      </div>
-  
+  <div class="pt-20 pb-8 px-7">
+    <div class="max-w-lg mx-auto text-center">
       <div
-        class="flex gap-6 mt-12 max-w-[1064px] mx-auto place-content-center flex-wrap"
+        class="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
       >
-        {#each features as feature}
-          <div class="card bg-white w-[270px] min-h-[300px] flex-none shadow-xl">
-            <div class="card-body items-center text-center p-[24px] pt-[32px]">
-              <div>
-                <svg
-                  width="50px"
-                  height="50px"
-                  class="mb-2 mt-1"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-                  {@html feature.svgContent}
-                </svg>
-              </div>
-              <h2 class="card-title">
-                {feature.name}
-              </h2>
-              <p class="text-sm">
-                {feature.description}
-              </p>
-              {#if feature.link}
-                <a
-                  href={feature.link}
-                  class="pb-4"
-                  target={feature.newPage ? "_blank" : ""}
-                >
-                  <button
-                    class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
-                    >{feature.linkText ? feature.linkText : "Try It"}</button
-                  >
-                </a>
-              {/if}
-            </div>
-          </div>
-        {/each}
+        Unleash the Trader Within You!
+      </div>
+      <div class="mt-6 text-xl font-bold">
+        This trading course is your
+        <span
+          class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
+        >
+          one-stop solution
+        </span>
+        to dive into the world of trading.
       </div>
     </div>
+
+    <div
+      class="flex gap-6 mt-12 max-w-[1064px] mx-auto place-content-center flex-wrap"
+    >
+      {#each features as feature}
+        <div class="card bg-white w-[270px] min-h-[300px] flex-none shadow-xl">
+          <div class="card-body items-center text-center p-[24px] pt-[32px]">
+            <div>
+              <svg
+                width="50px"
+                height="50px"
+                class="mb-2 mt-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                {@html feature.svgContent}
+              </svg>
+            </div>
+            <h2 class="card-title">
+              {feature.name}
+            </h2>
+            <p class="text-sm">
+              {feature.description}
+            </p>
+            {#if feature.link}
+              <a
+                href={feature.link}
+                class="pb-4"
+                target={feature.newPage ? "_blank" : ""}
+              >
+                <button
+                  class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
+                  >{feature.linkText ? feature.linkText : "Try It"}</button
+                >
+              </a>
+            {/if}
+          </div>
+        </div>
+      {/each}
+    </div>
   </div>
+</div>
