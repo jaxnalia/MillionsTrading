@@ -31,7 +31,7 @@
         <div class="mt-6 md:mt-10 text-sm md:text-lg">
           Hosted by <a href="http://x.com/bigjax_pls" class="link font-bold"
             >Jack Sendall</a
-          > Live on Weekdays, Mon - Fri, 12:00pm - 3:00pm London Time.
+          >, Streamed Live on Weekdays, 12:00pm - 3:00pm London Time.
         </div>
         <div class="mt-6 md:mt-2">
           <Sparkles>

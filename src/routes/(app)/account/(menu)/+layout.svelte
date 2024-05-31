@@ -27,7 +27,7 @@
           ><img
             class="h-10"
             alt="Millions Trading logo"
-            src="../../images/millionstrading.png"
+            src="../../images/millionsyellow.png"
           /></a
         >
       </div>
