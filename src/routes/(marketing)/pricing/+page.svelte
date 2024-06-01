@@ -15,6 +15,6 @@
   </h2>
 
   <div class="w-full my-8">
-    <Pricing callToAction="Choose Plan" highlightedPlanId="trader" />
+    <Pricing callToAction="Choose Plan" highlightedPlanId="premium" />
   </div>
 </div>

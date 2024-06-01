@@ -26,18 +26,31 @@
 <h1 class="text-2xl font-bold mb-6">
   {data.isActiveCustomer ? "Billing" : "Select a Plan"}
 </h1>
-
-{#if !data.isActiveCustomer}
-  <div class="mt-12">
-    <Pricing {currentPlanId} callToAction="Choose Plan" center={false} />
+{#if data.hasEverHadSubscription}
+  <div class="mt-10">
+    <a href="/account/billing/manage" class="link">Plan settings</a>
   </div>
 
-  {#if data.hasEverHadSubscription}
-    <div class="mt-10">
-      <a href="/account/billing/manage" class="link">View past invoices</a>
-    </div>
-  {/if}
+  <div class="mt-12">
+    <Pricing
+      {currentPlanId}
+      callToAction="Choose Plan"
+      highlightedPlanId={currentPlanId}
+      center={true}
+    />
+  </div>
 {:else}
+  <!-- {#if !data.isActiveCustomer} -->
+  <div class="mt-12">
+    <Pricing
+      {currentPlanId}
+      callToAction="Choose Plan"
+      highlightedPlanId="premium"
+      center={true}
+    />
+  </div>
+{/if}
+<!-- {:else}
   <Settings
     title="Subscription"
     editable={false}
@@ -51,4 +64,4 @@
     editButtonTitle="Manage Subscripton"
     editLink="/account/billing/manage"
   />
-{/if}
+{/if} -->

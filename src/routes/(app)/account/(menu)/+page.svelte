@@ -11,7 +11,7 @@
 </svelte:head>
 
 <h1 class="text-2xl font-bold mb-1">Dashboard</h1>
-<div class="alert alert-error max-w-lg mt-2">
+<!-- <div class="alert alert-error max-w-lg mt-2">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="stroke-current shrink-0 h-6 w-6"
@@ -36,8 +36,17 @@
       demos.
     </div>
   </div>
-</div>
+</div> -->
 
+<iframe
+  title="discord"
+  src="https://discord.com/widget?id=1087433522760929350&theme=dark"
+  width="350"
+  height="500"
+  allowtransparency={true}
+  frameborder="0"
+  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+></iframe>
 <div class="my-6">
   <h1 class="text-xl font-bold mb-1">Users</h1>
   <div class="stats shadow stats-vertical sm:stats-horizontal sm:w-[420px]">

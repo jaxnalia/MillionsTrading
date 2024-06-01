@@ -4,7 +4,7 @@ export const pricingPlans = [
   {
     id: "live",
     name: "Stream Access",
-    description: "Get a taste for what you can achieve with us",
+    description: "The first step towards profitability in markets",
     price: "£49.99",
     yearlyPrice: "£0",
     priceIntervalName: "/ monthly",
