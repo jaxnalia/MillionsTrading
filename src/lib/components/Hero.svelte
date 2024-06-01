@@ -27,7 +27,7 @@
         <div class="mt-6 md:mt-10 text-sm md:text-xl">
           Hosted by <a href="http://x.com/bigjax_pls" class="link font-bold"
             >Jack Sendall</a
-          >, streamed live on weekdays 9:30am - 11:00am EST
+          >, streamed live on weekdays from 9:30am until 11:00am EST
         </div>
         <div class="mt-6 md:mt-10 text-sm font-bold md:text-lg">
           This all in one course is all you need to kick start your journey to
