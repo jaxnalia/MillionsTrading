@@ -40,14 +40,14 @@
 
 <iframe
   title="discord"
-  src="https://discord.com/widget?id=1087433522760929350&theme=dark"
+  src="https://discord.com/widget?id=1087433522760929350&theme=light"
   width="350"
   height="500"
   allowtransparency={true}
   frameborder="0"
   sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
 ></iframe>
-<div class="my-6">
+<!-- <div class="my-6">
   <h1 class="text-xl font-bold mb-1">Users</h1>
   <div class="stats shadow stats-vertical sm:stats-horizontal sm:w-[420px]">
     <div class="stat place-items-center">
@@ -94,4 +94,4 @@
       <div class="stat-desc">↘︎ 1 (%7)</div>
     </div>
   </div>
-</div>
+</div> -->
