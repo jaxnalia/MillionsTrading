@@ -129,6 +129,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 		console.error('ERR: getting discord username', e);
 	}
 	console.log(discord_Username)
+	
 	//POST to n8n endpoint discord username & active subscription plan
 	
 	try {

@@ -8,7 +8,8 @@ export const pricingPlans = [
     price: "£49.99",
     yearlyPrice: "£0",
     priceIntervalName: "/ monthly",
-    stripe_price_id: null,
+    stripe_price_id: "price_1PMJSjBdxywDdojWVtf1UbIT",
+    stripe_product_id: "prod_QCiuucT9mIYOkV",
     features: ["Access to the daily livestreams",
 
     ],
@@ -22,8 +23,8 @@ export const pricingPlans = [
     yearlyPrice: "£0.00",
     deal: "MOST POPULAR",
     priceIntervalName: "/ monthly",
-    stripe_price_id: "price_1PMJSjBdxywDdojWVtf1UbIT",
-    stripe_product_id: "prod_QCiuucT9mIYOkV",
+    stripe_price_id: "price_1PNFPQBdxywDdojWPYG0omDe",
+    stripe_product_id: "prod_QDgnQDi8BM6pex",
     features: [
       "Access to the premium trading chat",
       "Access to the premium livestreams + daily livestreams",
