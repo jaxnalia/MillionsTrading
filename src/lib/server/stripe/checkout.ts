@@ -96,35 +96,55 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	}
 	let isActiveCustomer = !!primarySubscription
 	//get user ID of customer id
-	// const { data: userId, error: stripeCustomerError } = await supabaseAdmin
-	// 	.from("stripe_customers")
-	// 	.select(`user_id`)
-	// 	.eq("stripe_customer_id", customerId)
-	// 	.single()
-	// if (stripeCustomerError) {
-	// 	throw new Error(stripeCustomerError.message);
-	// }
+
+	let user_Id
+	try {
+		const { data: userId, error: stripeCustomerError } = await supabaseAdmin
+			.from("stripe_customers")
+			.select(`user_id`)
+			.eq("stripe_customer_id", customerId)
+			.single()
+			user_Id = userId
+		if (stripeCustomerError) {
+			throw new Error(stripeCustomerError.message);
+		}
+	} catch (e) {
+		console.error('ERR: getting customer id', e);
+	}
 
 	// //get discord username of user id
-	// const { data: discordUsername, error: discordError } = await supabaseAdmin
-	// 	.from("profiles")
-	// 	.select(`discord`)
-	// 	.eq("id", userId)
-	// 	.single()
-	// if (discordError) {
-	// 	throw new Error(discordError.message);
-	// }
+	let discord_Username
+	try {
+		const { data: discordUsername, error: discordError } = await supabaseAdmin
+			.from("profiles")
+			.select(`discord`)
+			.eq("id", user_Id)
+			.single()
+			discord_Username = discordUsername
+		if (discordError) {
+			throw new Error(discordError.message);
+		}
+	} catch (e) {
+		console.error('ERR: getting customer id', e);
+	}
+
 	//POST to n8n endpoint discord username & active subscription plan
 	
-	// const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
-	// 	method: 'POST',
-	// 	body: JSON.stringify({
-	// 		discord: discordUsername,
-	// 		plan: primarySubscription
-	// 	})
-	// })
-	// const json = await res.json()
-	// const result = JSON.stringify(json)
+	try {
+		const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
+			method: 'POST',
+			body: JSON.stringify({
+				discord: discord_Username,
+				plan: primarySubscription
+			})
+		})
+		const json = await res.json()
+		const result = JSON.stringify(json)
+		
+	} catch (e) {
+		console.error('ERR: getting customer id', e);
+	}
+
 	
 	
 
