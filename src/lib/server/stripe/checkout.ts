@@ -104,7 +104,8 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 			.select(`user_id`)
 			.eq("stripe_customer_id", customerId)
 			.single()
-			user_Id = userId
+			
+			user_Id = userId?.user_id
 		if (stripeCustomerError) {
 			throw new Error(stripeCustomerError.message);
 		}
