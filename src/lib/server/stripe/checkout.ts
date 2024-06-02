@@ -2,7 +2,6 @@ import type { Stripe } from 'stripe';
 import { stripe } from './client';
 import { supabaseAdmin } from '../supabase/supabase-admin';
 import { fetchSubscription } from '../../../routes/(app)/account/subscription_helpers.server';
-import { actions } from '../../../routes/(marketing)/proxy+page.server';
 
 // Doing this as the type is not complete for the subscription
 interface SubscriptionResponse extends Stripe.Subscription {
