@@ -105,27 +105,27 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 		throw new Error(stripeCustomerError.message);
 	}
 
-	// //get discord username of user id
-	// const { data: discordUsername, error: discordError } = await supabaseAdmin
-	// 	.from("profiles")
-	// 	.select(`discord`)
-	// 	.eq("id", userId)
-	// 	.single()
-	// if (discordError) {
-	// 	throw new Error(discordError.message);
-	// }
-	// //POST to n8n endpoint discord username & active subscription plan
-	// if (isActiveCustomer) {
-	// 	const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
-	// 		method: 'POST',
-	// 		body: JSON.stringify({
-	// 			discord: discordUsername,
-	// 			plan: primarySubscription
-	// 		})
-	// 	})
-	// 	const json = await res.json()
-	// 	const result = JSON.stringify(json)
-	// }
+	//get discord username of user id
+	const { data: discordUsername, error: discordError } = await supabaseAdmin
+		.from("profiles")
+		.select(`discord`)
+		.eq("id", userId)
+		.single()
+	if (discordError) {
+		throw new Error(discordError.message);
+	}
+	//POST to n8n endpoint discord username & active subscription plan
+	if (isActiveCustomer) {
+		const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
+			method: 'POST',
+			body: JSON.stringify({
+				discord: discordUsername,
+				plan: primarySubscription
+			})
+		})
+		const json = await res.json()
+		const result = JSON.stringify(json)
+	}
 	
 
 };
