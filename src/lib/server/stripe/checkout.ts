@@ -127,7 +127,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 		const json = await res.json()
 		const result = JSON.stringify(json)
 	}
-	}
+	
 
 };
 
