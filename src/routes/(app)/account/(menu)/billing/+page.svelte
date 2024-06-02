@@ -28,7 +28,9 @@
 </h1>
 {#if data.hasEverHadSubscription}
   <div class="mt-10">
-    <a href="/account/billing/manage" class="link">Plan settings</a>
+    <a href="/account/billing/manage" class="link"
+      >Manage billing and past invoices</a
+    >
   </div>
 
   <div class="mt-12">

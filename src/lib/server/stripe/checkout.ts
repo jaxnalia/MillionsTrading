@@ -1,6 +1,8 @@
 import type { Stripe } from 'stripe';
 import { stripe } from './client';
 import { supabaseAdmin } from '../supabase/supabase-admin';
+import { fetchSubscription } from '../../../routes/(app)/account/subscription_helpers.server';
+import { actions } from '../../../routes/(marketing)/proxy+page.server';
 
 // Doing this as the type is not complete for the subscription
 interface SubscriptionResponse extends Stripe.Subscription {
@@ -25,7 +27,7 @@ export const handleCheckoutCompleted = async (checkout: Stripe.Checkout.Session)
 		if (!profile || error) {
 			throw new Error('error checkout getting profile:' + error.message);
 		}
-
+		// get subscription from subscription object
 		const subscription = (await stripe.subscriptions.retrieve(
 			subscriptionId as string
 		)) as unknown as SubscriptionResponse;
@@ -55,9 +57,12 @@ export const handleCheckoutCompleted = async (checkout: Stripe.Checkout.Session)
 
 export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) => {
 	console.log("handleCheckoutUpdated",subscription)
+	//get customer id from subscription object
+	const customerId = subscription.customer
 	//get product id from subscription object
 	const productId = subscription.items.data[0].price.product
 	//get product from product id
+	// @ts-ignore
 	const product = await stripe.products.retrieve(productId)
 	const plan_type = product.name
     try {
@@ -74,6 +79,56 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	} catch (e) {
 		console.error('ERR: Updating subscription', e);
 	}
+	//get subscription of customer id
+	const {
+		primarySubscription,
+		hasEverHadSubscription,
+		error: fetchErr,
+	} = await fetchSubscription({
+		// @ts-ignore
+		customerId,
+	})
+	if (fetchErr) {
+		console.log("error",fetchErr)
+		// @ts-ignore
+		throw error(500, {
+		message: "Unknown error. If issue persists, please contact us.",
+		})
+	}
+	let isActiveCustomer = !!primarySubscription
+	//get user ID of customer id
+	const { data: userId, error: stripeCustomerError } = await supabaseAdmin
+		.from("stripe_customers")
+		.select(`user_id`)
+		.eq("stripe_customer_id", customerId)
+		.single()
+	if (stripeCustomerError) {
+		throw new Error(stripeCustomerError.message);
+	}
+
+	//get discord username of user id
+	const { data: discordUsername, error: discordError } = await supabaseAdmin
+		.from("profiles")
+		.select(`discord`)
+		.eq("id", userId)
+		.single()
+	if (discordError) {
+		throw new Error(discordError.message);
+	}
+	//POST to n8n endpoint discord username & active subscription plan
+	if (isActiveCustomer) {
+		const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
+			method: 'POST',
+			body: JSON.stringify({
+				discord: discordUsername,
+				plan: primarySubscription
+			})
+		})
+		const json = await res.json()
+		const result = JSON.stringify(json)
+	}
+	}
+
 };
 
 
