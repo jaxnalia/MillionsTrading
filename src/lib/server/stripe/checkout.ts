@@ -96,24 +96,24 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	}
 	let isActiveCustomer = !!primarySubscription
 	//get user ID of customer id
-	const { data: userId, error: stripeCustomerError } = await supabaseAdmin
-		.from("stripe_customers")
-		.select(`user_id`)
-		.eq("stripe_customer_id", customerId)
-		.single()
-	if (stripeCustomerError) {
-		throw new Error(stripeCustomerError.message);
-	}
+	// const { data: userId, error: stripeCustomerError } = await supabaseAdmin
+	// 	.from("stripe_customers")
+	// 	.select(`user_id`)
+	// 	.eq("stripe_customer_id", customerId)
+	// 	.single()
+	// if (stripeCustomerError) {
+	// 	throw new Error(stripeCustomerError.message);
+	// }
 
-	//get discord username of user id
-	const { data: discordUsername, error: discordError } = await supabaseAdmin
-		.from("profiles")
-		.select(`discord`)
-		.eq("id", userId)
-		.single()
-	if (discordError) {
-		throw new Error(discordError.message);
-	}
+	// //get discord username of user id
+	// const { data: discordUsername, error: discordError } = await supabaseAdmin
+	// 	.from("profiles")
+	// 	.select(`discord`)
+	// 	.eq("id", userId)
+	// 	.single()
+	// if (discordError) {
+	// 	throw new Error(discordError.message);
+	// }
 	//POST to n8n endpoint discord username & active subscription plan
 	
 	// const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
