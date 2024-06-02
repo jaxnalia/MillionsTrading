@@ -42,5 +42,11 @@
       initialValue: profile?.website ?? "",
       maxlength: 50,
     },
+    {
+      id: "discord",
+      label: "Discord Username",
+      initialValue: profile?.discord ?? "",
+      maxlength: 50,
+    },
   ]}
 />

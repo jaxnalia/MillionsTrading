@@ -36,6 +36,11 @@ export const actions = {
       errors["company"] = "Company too long"
     }
 
+    const discord = formData.get("discord")?.toString() ?? ""
+    if (discord.length > 500) {
+      errors["discord"] = "Discord too long"
+    }
+
     const phone = formData.get("phone")?.toString() ?? ""
     if (phone.length > 100) {
       errors["phone"] = "Phone number too long"
@@ -60,6 +65,7 @@ export const actions = {
         email,
         company_name: company,
         phone,
+        discord,
         message_body: message,
         updated_at: new Date(),
       })

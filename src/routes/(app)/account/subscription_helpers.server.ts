@@ -28,7 +28,7 @@ export const getOrCreateCustomerId = async ({
   // Fetch data needed to create customer
   const { data: profile, error: profileError } = await supabaseServiceRole
     .from("profiles")
-    .select(`full_name, website, company_name`)
+    .select(`full_name, website, company_name, discord`)
     .eq("id", session.user.id)
     .single()
   if (profileError) {
@@ -45,6 +45,7 @@ export const getOrCreateCustomerId = async ({
         user_id: session.user.id,
         company_name: profile.company_name ?? "",
         website: profile.website ?? "",
+        discord: profile.discord ?? "",
       },
     })
   } catch (e) {

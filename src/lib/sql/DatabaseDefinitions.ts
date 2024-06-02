@@ -11,6 +11,7 @@ export interface Database {
     Tables: {
       contact_requests: {
         Row: {
+          discord: string | null
           company_name: string | null
           email: string | null
           first_name: string | null
@@ -21,6 +22,7 @@ export interface Database {
           updated_at: Date | null
         }
         Insert: {
+          discord: string | null
           company_name?: string | null
           email?: string | null
           first_name?: string | null
@@ -31,6 +33,7 @@ export interface Database {
           updated_at?: Date | null
         }
         Update: {
+          discord: string | null
           company_name?: string | null
           email?: string | null
           first_name?: string | null
@@ -44,6 +47,7 @@ export interface Database {
       }
       profiles: {
         Row: {
+          discord: string | null
           avatar_url: string | null
           full_name: string | null
           id: string
@@ -52,6 +56,7 @@ export interface Database {
           website: string | null
         }
         Insert: {
+          discord: string | null
           avatar_url?: string | null
           full_name?: string | null
           id: string
@@ -60,6 +65,7 @@ export interface Database {
           website?: string | null
         }
         Update: {
+          discord: string | null
           avatar_url?: string | null
           full_name?: string | null
           id?: string

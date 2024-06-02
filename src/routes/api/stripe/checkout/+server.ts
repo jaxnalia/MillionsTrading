@@ -19,6 +19,7 @@ export const POST: RequestHandler = async ({url}) => {
         });
         return new Response(JSON.stringify({ sessionId: checkoutSession.id }));
     } catch (err) {
+        //@ts-ignore
         return new Response(JSON.stringify({ status:500, detail: err.detail  }));
     }
 }

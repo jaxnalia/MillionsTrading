@@ -12,6 +12,7 @@
   let fullName: string = profile?.full_name ?? ""
   let companyName: string = profile?.company_name ?? ""
   let website: string = profile?.website ?? ""
+  let discord: string = profile?.discord ?? ""
 
   const fieldError = (liveForm: FormAccountUpdateResult, name: string) => {
     let errors = liveForm?.errorFields ?? []
@@ -91,6 +92,23 @@
               ? 'input-error'
               : ''} mt-1 input input-bordered w-full max-w-xs"
             value={form?.website ?? website}
+            maxlength="50"
+          />
+        </div>
+
+        <div class="mt-4">
+          <label for="discord">
+            <span class="text-l text-center">Discord Username</span>
+          </label>
+          <input
+            id="discord"
+            name="discord"
+            type="text"
+            placeholder="Discord username"
+            class="{fieldError(form, 'discord')
+              ? 'input-error'
+              : ''} mt-1 input input-bordered w-full max-w-xs"
+            value={form?.discord ?? discord}
             maxlength="50"
           />
         </div>

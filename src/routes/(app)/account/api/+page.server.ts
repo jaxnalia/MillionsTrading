@@ -201,6 +201,7 @@ export const actions = {
     const fullName = formData.get("fullName") as string
     const companyName = formData.get("companyName") as string
     const website = formData.get("website") as string
+    const discord = formData.get("discord") as string
 
     let validationError
     const fieldMaxTextLength = 50
@@ -212,21 +213,29 @@ export const actions = {
       validationError = `Name must be less than ${fieldMaxTextLength} characters`
       errorFields.push("fullName")
     }
-    if (!companyName) {
+    // if (!companyName) {
+    //   validationError =
+    //     "Company name is required. If this is a hobby project or personal app, please put your name."
+    //   errorFields.push("companyName")
+    // } else if (companyName.length > fieldMaxTextLength) {
+    //   validationError = `Company name must be less than ${fieldMaxTextLength} characters`
+    //   errorFields.push("companyName")
+    // }
+    // if (!website) {
+    //   validationError =
+    //     "Company website is required. An app store URL is a good alternative if you don't have a website."
+    //   errorFields.push("website")
+    // } else if (website.length > fieldMaxTextLength) {
+    //   validationError = `Company website must be less than ${fieldMaxTextLength} characters`
+    //   errorFields.push("website")
+    // }
+    if (!discord) {
       validationError =
-        "Company name is required. If this is a hobby project or personal app, please put your name."
-      errorFields.push("companyName")
-    } else if (companyName.length > fieldMaxTextLength) {
-      validationError = `Company name must be less than ${fieldMaxTextLength} characters`
-      errorFields.push("companyName")
-    }
-    if (!website) {
-      validationError =
-        "Company website is required. An app store URL is a good alternative if you don't have a website."
-      errorFields.push("website")
-    } else if (website.length > fieldMaxTextLength) {
-      validationError = `Company website must be less than ${fieldMaxTextLength} characters`
-      errorFields.push("website")
+        "Discord username is required to access the course."
+      errorFields.push("discord")
+    } else if (discord.length > fieldMaxTextLength) {
+      validationError = `Discord username must be less than ${fieldMaxTextLength} characters`
+      errorFields.push("discord")
     }
     if (validationError) {
       return fail(400, {
@@ -243,6 +252,7 @@ export const actions = {
       full_name: fullName,
       company_name: companyName,
       website: website,
+      discord: discord,
       updated_at: new Date(),
     })
 
@@ -252,6 +262,7 @@ export const actions = {
         fullName,
         companyName,
         website,
+        discord,
       })
     }
 
@@ -259,6 +270,7 @@ export const actions = {
       fullName,
       companyName,
       website,
+      discord,
     }
   },
   signout: async ({ locals: { supabase, getSession } }) => {

@@ -1,3 +1,4 @@
+//@ts-ignore
 import type { Database } from "$lib/types_db"
 import { createClient } from "@supabase/supabase-js";
 import { PUBLIC_SUPABASE_URL } from "$env/static/public";
@@ -7,7 +8,7 @@ export const supabaseAdmin = createClient<Database>(
 	PUBLIC_SUPABASE_URL,
 	SUPABASE_SERVICE_ROLE_KEY
 );
-
+//@ts-ignore
 export const getProfile = async (session) => {
     const profiles_table = "profiles"
     const {data, error } = await supabaseAdmin
@@ -18,7 +19,7 @@ export const getProfile = async (session) => {
     .single()
     return {data, error}
 }
-
+//@ts-ignore
 export const deleteUser = async (userId) => {
     const { data, error } = await supabaseAdmin.auth.admin.deleteUser(
         userId
@@ -26,9 +27,10 @@ export const deleteUser = async (userId) => {
     return {data, error}
 }
 
-
+//@ts-ignore
 export const signOut = async (session) => {
     const {error } = await supabaseAdmin.auth.admin.signOut(session)
+    //@ts-ignore
     console.log("admin signout error",error.message)
 }
 

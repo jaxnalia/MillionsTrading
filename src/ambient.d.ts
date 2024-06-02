@@ -6,6 +6,7 @@ declare global {
     companyName?: string
     website?: string
     email?: string
+    discord?: string
   }
 }
 

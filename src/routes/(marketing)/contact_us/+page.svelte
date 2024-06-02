@@ -38,6 +38,12 @@
     //   autocomplete: "organization",
     // },
     {
+      id: "discord",
+      label: "Discord Username",
+      inputType: "text",
+      autocomplete: "off",
+    },
+    {
       id: "message",
       label: "Message",
       inputType: "textarea",
@@ -78,10 +84,9 @@
         <li class="">Discuss your trading strategy</li>
         <li>Get an account management quote</li>
         <li>Report an problem with our service</li>
-        
       </ul>
       <p>Simply complete the form, and we'll reach out to you!</p>
-      
+
       <!-- <h1 class="text-2xl lg:text-4xl font-bold mb-4">Contact Us</h1>
       <p class="text-lg">Talk to one of our service professionals to:</p>
       <ul class="list-disc list-outside pl-6 py-4 space-y-1">
