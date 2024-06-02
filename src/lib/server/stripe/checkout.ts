@@ -111,7 +111,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	} catch (e) {
 		console.error('ERR: getting customer id', e);
 	}
-
+	console.log(user_Id)
 	// //get discord username of user id
 	let discord_Username
 	try {
@@ -127,7 +127,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	} catch (e) {
 		console.error('ERR: getting discord username', e);
 	}
-
+	console.log(discord_Username)
 	//POST to n8n endpoint discord username & active subscription plan
 	
 	try {
