@@ -38,7 +38,7 @@
             <a href="/pricing">
               <CheckoutButton
                 classes="btn btn-wide btn-lg btn-outline btn-primary btn-sm px-6 mt-3 mx-2"
-                >Enroll Now</CheckoutButton
+                >Get Access</CheckoutButton
               >
             </a>
           </Sparkles>

@@ -118,7 +118,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	try {
 		const { data: discordUsername, error: discordError } = await supabaseAdmin
 			.from("profiles")
-			.select(`discord`)
+			.select(`provider_id`)
 			.eq("id", user_Id)
 			.single()
 			discord_Username = discordUsername
@@ -136,7 +136,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 		const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
 			method: 'POST',
 			body: JSON.stringify({
-				discord: discord_Username?.discord,
+				discord: discord_Username?.provider_id,
 				plan: primarySubscription
 			})
 		})
