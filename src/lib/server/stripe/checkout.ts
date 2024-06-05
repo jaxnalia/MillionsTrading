@@ -96,7 +96,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	}
 	let isActiveCustomer = !!primarySubscription
 	//get user ID of customer id
-	console.log(customerId)
+	
 	let user_Id
 	try {
 		const { data: userId, error: stripeCustomerError } = await supabaseAdmin
@@ -112,7 +112,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	} catch (e) {
 		console.error('ERR: getting customer id', e);
 	}
-	console.log(user_Id)
+	
 	// //get discord username of user id
 	let discord_Username
 	try {
@@ -128,7 +128,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	} catch (e) {
 		console.error('ERR: getting discord username', e);
 	}
-	console.log(discord_Username)
+	
 	
 	//POST to n8n endpoint discord username & active subscription plan
 	
@@ -140,8 +140,11 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 				plan: primarySubscription
 			})
 		})
-		const json = await res.json()
-		const result = JSON.stringify(json)
+
+		console.log(res)
+		if (res) {
+			throw new Error(JSON.stringify(res));
+		}
 		
 	} catch (e) {
 		console.error('ERR: posting n8n webhook', e);
