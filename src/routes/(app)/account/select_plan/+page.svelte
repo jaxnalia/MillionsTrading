@@ -12,7 +12,9 @@
   <div class="flex flex-col w-full px-6">
     <div>
       <h1 class="text-2xl font-bold mb-6">Select a Plan</h1>
-      <Pricing callToAction="Select Plan" highlightedPlanId="premium" />
+      <div class="text-left">
+        <Pricing callToAction="Select Plan" highlightedPlanId="premium" />
+      </div>
     </div>
   </div>
 </div>
