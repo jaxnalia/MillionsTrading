@@ -64,6 +64,7 @@ export const pricingPlans = [
       "test",
     ],
   },
+  
   // {
   //   id: "master",
   //   name: "Master",
