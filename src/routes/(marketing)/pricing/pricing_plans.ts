@@ -43,6 +43,7 @@ export const pricingPlans = [
     priceIntervalName: "/ lifetime",
     stripe_price_id: "price_1PS5jSBdxywDdojWZns9IXiQ",
     stripe_product_id: "prod_QIf9yuzhY4hX0r",
+    callToAction: "Coming soon..",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
       "Lifetime access to the premium trading chat",
