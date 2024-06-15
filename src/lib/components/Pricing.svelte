@@ -30,6 +30,8 @@
     proIncluded?: boolean
     freeString?: string
     proString?: string
+    premString?: string
+    premIncluded?: boolean
     header?: boolean
   }
 
@@ -39,14 +41,16 @@
       header: true,
     },
     {
-      name: "Free signals",
+      name: "Free trade setups",
       freeIncluded: true,
       proIncluded: true,
+      premIncluded: true,
     },
     {
-      name: "Premium signals",
+      name: "Private community",
       freeIncluded: false,
-      proIncluded: true,
+      proIncluded: false,
+      premIncluded: true,
     },
     {
       name: "Trading Course",
@@ -55,12 +59,14 @@
     {
       name: "Weekly live sessions",
       freeString: "1",
-      proString: "5",
+      proString: "5-6",
+      premString: "5-6",
     },
     {
-      name: "1-to-1 Mentorship",
+      name: "Access 1-to-1 mentorship",
       freeIncluded: false,
-      proIncluded: true,
+      proIncluded: false,
+      premIncluded: true,
     },
   ]
 </script>
@@ -184,15 +190,16 @@
     >
       <tr>
         <th></th>
-        <th class="text-center">Member</th>
-        <th class="text-center">Trading Course</th>
+        <th class="text-center">Free</th>
+        <th class="text-center">Stream Access</th>
+        <th class="text-center">Premium</th>
       </tr>
     </thead>
     <tbody>
       {#each planFeatures as feature}
         {#if feature.header}
           <tr class="bg-base-200 font-bold">
-            <td colspan="3">{feature.name}</td>
+            <td colspan="4">{feature.name}</td>
           </tr>
         {:else}
           <tr class="relative">
@@ -220,6 +227,25 @@
               {#if feature.proString}
                 {feature.proString}
               {:else if feature.proIncluded}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8 ml-2 inline text-success"
+                >
+                  <use href="#checkcircle" />
+                </svg>
+              {:else}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[26px] h-[26px] inline text-base-200"
+                >
+                  <use href="#nocircle" />
+                </svg>
+              {/if}
+            </td>
+            <td class="text-center">
+              {#if feature.premString}
+                {feature.premString}
+              {:else if feature.premIncluded}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="w-8 h-8 ml-2 inline text-success"
