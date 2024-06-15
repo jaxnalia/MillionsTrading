@@ -82,7 +82,7 @@
         <!-- <li class="">Get a live demo</li> -->
         <li>Answer any technical questions you may have</li>
         <li class="">Discuss your trading strategy</li>
-        <li>Get an account management quote</li>
+        <!-- <li>Get an account management quote</li> -->
         <li>Report an problem with our service</li>
       </ul>
       <p>Simply complete the form, and we'll reach out to you!</p>
