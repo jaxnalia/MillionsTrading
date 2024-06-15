@@ -50,9 +50,9 @@ export const _hasFullProfile = (
   // if (!profile.website) {
   //   return false
   // }
-  if (!profile.discord) {
-    return false
-  }
+  // if (!profile.discord) {
+  //   return false
+  // }
 
   return true
 }
