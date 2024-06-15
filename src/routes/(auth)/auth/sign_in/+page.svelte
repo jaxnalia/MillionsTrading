@@ -51,6 +51,7 @@
   providers={oauthProviders}
   socialLayout="vertical"
   showLinks={false}
+  appearance={sharedAppearance}
   onlyThirdPartyProviders
 />
 <!-- <div class="text-l text-slate-800 mt-4">
