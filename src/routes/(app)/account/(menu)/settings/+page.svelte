@@ -21,16 +21,16 @@
   editable={false}
   fields={[
     { id: "fullName", label: "Name", initialValue: profile?.full_name ?? "" },
-    {
-      id: "companyName",
-      label: "Company Name",
-      initialValue: profile?.company_name ?? "",
-    },
-    {
-      id: "website",
-      label: "Company Website",
-      initialValue: profile?.website ?? "",
-    },
+    // {
+    //   id: "companyName",
+    //   label: "Company Name",
+    //   initialValue: profile?.company_name ?? "",
+    // },
+    // {
+    //   id: "website",
+    //   label: "Company Website",
+    //   initialValue: profile?.website ?? "",
+    // },
   ]}
   editButtonTitle="Edit Profile"
   editLink="/account/settings/edit_profile"
