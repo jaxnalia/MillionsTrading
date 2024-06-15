@@ -7,7 +7,14 @@ a {
 }
 
 /* Hack to temporarily solve https://github.com/supabase/auth-ui/issues/219 */
+.authLabel {
+  display: none;
+}
+.authInput {
+  display: none;
+}
 .authBtn {
+  display: none;
   @apply btn;
 }
 button[disabled].authBtn {

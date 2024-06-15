@@ -60,9 +60,3 @@
 <div class="text-l text-slate-800 mt-3">
   Don't have an account? <a class="underline" href="/auth/sign_up">Sign up</a>.
 </div>
-
-<style>
-  .authBtn {
-    display: none;
-  }
-</style>

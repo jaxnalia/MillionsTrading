@@ -1,5 +1,6 @@
 import { ThemeSupa } from "@supabase/auth-ui-shared"
 import type { Provider } from "@supabase/supabase-js"
+import { Input } from "postcss"
 
 export const oauthProviders = ["discord"] as Provider[]
 
@@ -25,8 +26,10 @@ export const sharedAppearance = {
     },
   },
   className: {
+    label: "authLabel",
+    input: "authInput",
     button: "authBtn",
     form: "authForm",
-    
+
   },
 }
