@@ -8,8 +8,8 @@ export const pricingPlans = [
     price: "£49.99",
     yearlyPrice: "£0",
     priceIntervalName: "/ monthly",
-    stripe_price_id: "price_1PS38XBdxywDdojWxpDQVj25",
-    stripe_product_id: "prod_QIeRfSRNwck2Ac",
+    stripe_price_id: "price_1PS3mmBdxywDdojWP6UQ5p5K",
+    stripe_product_id: "prod_QIf7kWZeNsUIFu",
     features: ["Access to the daily livestreams",
 
     ],
@@ -41,30 +41,30 @@ export const pricingPlans = [
     yearlyPrice: "£0.00",
     // deal: "SAVE £50",
     priceIntervalName: "/ lifetime",
-    stripe_price_id: "price_1PS38XBdxywDdojWxpDQVj25",
-    stripe_product_id: "prod_QIeRfSRNwck2Ac",
+    stripe_price_id: "price_1PS3orBdxywDdojWDiETR8c7",
+    stripe_product_id: "prod_QIf9yuzhY4hX0r",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
       "Lifetime access to the premium trading chat",
       "Lifetime access to the premium livestreams + daily livestreams",
     ],
   },
-  {
-    id: "test",
-    name: "TEST",
-    description:
-      "Everything you need to test",
-    price: "£0.99",
-    yearlyPrice: "£0.00",
-    // deal: "SAVE £50",
-    priceIntervalName: "/ month",
-    stripe_price_id: "price_1PS3GZBdxywDdojWRkVKq5qI",
-    stripe_product_id: "prod_QIeRfSRNwck2Ac",
-    features: [
-      "test",
-    ],
-  },
-  
+  // {
+  //   id: "test",
+  //   name: "TEST",
+  //   description:
+  //     "Everything you need to test",
+  //   price: "£0.99",
+  //   yearlyPrice: "£0.00",
+  //   // deal: "SAVE £50",
+  //   priceIntervalName: "/ month",
+  //   stripe_price_id: "price_1PS3GZBdxywDdojWRkVKq5qI",
+  //   stripe_product_id: "prod_QIeRfSRNwck2Ac",
+  //   features: [
+  //     "test",
+  //   ],
+  // },
+
   // {
   //   id: "master",
   //   name: "Master",
