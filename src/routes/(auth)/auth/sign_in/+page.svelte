@@ -62,7 +62,7 @@
 </div>
 
 <style>
-  .authForm {
+  .authBtn {
     display: none;
   }
 </style>
