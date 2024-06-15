@@ -19,6 +19,8 @@
 </div>
 
 <Features />
-<Testiomonials />
-<Newsletter />
+<!-- <Testiomonials /> -->
+<div class="mt-10">
+  <Newsletter />
+</div>
 <FAQ />

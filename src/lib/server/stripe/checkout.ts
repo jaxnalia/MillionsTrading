@@ -133,7 +133,7 @@ export const handleCheckoutUpdated = async (subscription: Stripe.Subscription) =
 	//POST to n8n endpoint discord username & active subscription plan
 	
 	try {
-		const res = await fetch('https://bigjax.app.n8n.cloud/webhook-test/discordUpdate', {
+		const res = await fetch('https://n8n-selfhost.onrender.com/webhook/discordUpdate', {
 			method: 'POST',
 			body: JSON.stringify({
 				discord: discord_Username?.provider_id,

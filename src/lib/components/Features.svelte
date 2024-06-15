@@ -12,7 +12,7 @@
 <path d="M7 6H12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>`,
     },
     {
-      name: "Trading Community",
+      name: "Exclusive Community",
       link: "/pricing",
       linkText: "Get Access",
       description:
@@ -187,7 +187,7 @@
       class="flex gap-6 mt-12 max-w-[1064px] mx-auto place-content-center flex-wrap"
     >
       {#each features as feature}
-        <div class="card bg-white w-[270px] min-h-[300px] flex-none shadow-xl">
+        <div class="card bg-white w-[300px] min-h-[300px] flex-none shadow-xl">
           <div class="card-body items-center text-center p-[24px] pt-[32px]">
             <div>
               <svg
@@ -205,7 +205,7 @@
             <h2 class="card-title">
               {feature.name}
             </h2>
-            <p class="text-sm">
+            <p class="text-sm font-semibold">
               {feature.description}
             </p>
             {#if feature.link}
@@ -215,7 +215,7 @@
                 target={feature.newPage ? "_blank" : ""}
               >
                 <button
-                  class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
+                  class="btn btn-sm btn-outline rounded-full btn-primary min-w-[100px]"
                   >{feature.linkText ? feature.linkText : "Try It"}</button
                 >
               </a>
