@@ -49,6 +49,21 @@ export const pricingPlans = [
       "Lifetime access to the premium livestreams + daily livestreams",
     ],
   },
+  {
+    id: "test",
+    name: "TEST",
+    description:
+      "Everything you need to test",
+    price: "£0.99",
+    yearlyPrice: "£0.00",
+    // deal: "SAVE £50",
+    priceIntervalName: "/ month",
+    stripe_price_id: "price_1PS3GZBdxywDdojWRkVKq5qI",
+    stripe_product_id: "prod_QIeRfSRNwck2Ac",
+    features: [
+      "test",
+    ],
+  },
   // {
   //   id: "master",
   //   name: "Master",
