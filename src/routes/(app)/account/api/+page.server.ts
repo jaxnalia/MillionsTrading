@@ -229,14 +229,14 @@ export const actions = {
     //   validationError = `Company website must be less than ${fieldMaxTextLength} characters`
     //   errorFields.push("website")
     // }
-    if (!discord) {
-      validationError =
-        "Discord username is required to access the course."
-      errorFields.push("discord")
-    } else if (discord.length > fieldMaxTextLength) {
-      validationError = `Discord username must be less than ${fieldMaxTextLength} characters`
-      errorFields.push("discord")
-    }
+    // if (!discord) {
+    //   validationError =
+    //     "Discord username is required to access the course."
+    //   errorFields.push("discord")
+    // } else if (discord.length > fieldMaxTextLength) {
+    //   validationError = `Discord username must be less than ${fieldMaxTextLength} characters`
+    //   errorFields.push("discord")
+    // }
     if (validationError) {
       return fail(400, {
         errorMessage: validationError,
