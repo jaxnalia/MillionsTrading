@@ -26,5 +26,7 @@ export const sharedAppearance = {
   },
   className: {
     button: "authBtn",
+    form: "authForm",
+    
   },
 }
