@@ -41,7 +41,7 @@ export const pricingPlans = [
     yearlyPrice: "£0.00",
     // deal: "SAVE £50",
     priceIntervalName: "/ lifetime",
-    stripe_price_id: "price_1PS3orBdxywDdojWDiETR8c7",
+    stripe_price_id: "price_1PS5jSBdxywDdojWZns9IXiQ",
     stripe_product_id: "prod_QIf9yuzhY4hX0r",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
