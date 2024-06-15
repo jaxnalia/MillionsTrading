@@ -44,19 +44,18 @@
     <span>Email verified! Please sign in.</span>
   </div>
 {/if}
-<h1 class="text-2xl font-bold mb-6">Sign In with Discord</h1>
+<h1 class="text-2xl font-bold mb-6">Sign In</h1>
 <Auth
   supabaseClient={data.supabase}
   redirectTo={`${data.url}/auth/callback`}
   providers={oauthProviders}
-  socialLayout="horizontal"
+  socialLayout="vertical"
   showLinks={false}
-  appearance={sharedAppearance}
-  additionalData={undefined}
+  onlyThirdPartyProviders
 />
-<div class="text-l text-slate-800 mt-4">
+<!-- <div class="text-l text-slate-800 mt-4">
   <a class="underline" href="/auth/forgot_password">Forgot password?</a>
 </div>
 <div class="text-l text-slate-800 mt-3">
   Don't have an account? <a class="underline" href="/auth/sign_up">Sign up</a>.
-</div>
+</div> -->

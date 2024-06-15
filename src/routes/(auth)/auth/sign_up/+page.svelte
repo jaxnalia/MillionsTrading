@@ -9,16 +9,18 @@
   <title>Sign up</title>
 </svelte:head>
 
-<h1 class="text-2xl font-bold mb-6">Sign Up with Discord</h1>
+<h1 class="text-2xl font-bold mb-6">Sign Up</h1>
+
 <Auth
   supabaseClient={data.supabase}
   redirectTo={`${data.url}/auth/callback`}
   showLinks={false}
   providers={oauthProviders}
-  socialLayout="horizontal"
-  appearance={sharedAppearance}
-  additionalData={undefined}
+  socialLayout="vertical"
+  view="sign_up"
+  onlyThirdPartyProviders
 />
-<div class="text-l text-slate-800 mt-4 mb-2">
+
+<!-- <div class="text-l text-slate-800 mt-4 mb-2">
   Have an account? <a class="underline" href="/auth/sign_in">Sign in</a>.
-</div>
+</div> -->
