@@ -8,8 +8,8 @@ export const pricingPlans = [
     price: "£49.99",
     yearlyPrice: "£0",
     priceIntervalName: "/ monthly",
-    stripe_price_id: "price_1PMJSjBdxywDdojWVtf1UbIT",
-    stripe_product_id: "prod_QCiuucT9mIYOkV",
+    stripe_price_id: "price_1PS38XBdxywDdojWxpDQVj25",
+    stripe_product_id: "prod_QIeRfSRNwck2Ac",
     features: ["Access to the daily livestreams",
 
     ],
@@ -23,8 +23,8 @@ export const pricingPlans = [
     yearlyPrice: "£0.00",
     deal: "MOST POPULAR",
     priceIntervalName: "/ monthly",
-    stripe_price_id: "price_1PNFPQBdxywDdojWPYG0omDe",
-    stripe_product_id: "prod_QDgnQDi8BM6pex",
+    stripe_price_id: "price_1PS39dBdxywDdojWsj3K4W89",
+    stripe_product_id: "prod_QIeRfSRNwck2Ac",
     features: [
       "Access to the premium trading chat",
       "Access to the premium livestreams + daily livestreams",
@@ -41,8 +41,8 @@ export const pricingPlans = [
     yearlyPrice: "£0.00",
     // deal: "SAVE £50",
     priceIntervalName: "/ lifetime",
-    stripe_price_id: "price_1PMJTaBdxywDdojWLhT1oPaS",
-    stripe_product_id: "prod_QCivnPYINEaRGr",
+    stripe_price_id: "price_1PS38XBdxywDdojWxpDQVj25",
+    stripe_product_id: "prod_QIeRfSRNwck2Ac",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
       "Lifetime access to the premium trading chat",
