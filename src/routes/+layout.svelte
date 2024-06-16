@@ -6,7 +6,10 @@
 </script>
 
 <svelte:head>
-  <meta property="og:image" content="static/images/millionstradingcoure.png" />
+  <meta
+    property="og:image"
+    content="https://bigjax.s3.eu-west-2.amazonaws.com/millionstradingcourse.png"
+  />
 </svelte:head>
 
 {#if $navigating}
