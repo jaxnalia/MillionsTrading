@@ -6,11 +6,7 @@
 </script>
 
 <svelte:head>
-<<<<<<< HEAD
   <meta property="og:image" content="static/images/millionstradingcoure.png" />
-=======
-  <meta property="og:image" content="images/millionstradingcoure.png" />
->>>>>>> 2400b0c5ea40c302bb580eccd3f73a85a300dbcb
 </svelte:head>
 
 {#if $navigating}
