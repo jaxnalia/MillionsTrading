@@ -5,6 +5,10 @@
   import { slide } from "svelte/transition"
 </script>
 
+<svelte:head>
+  <meta property="og:image" content="../images/millionstradingcoure.png" />
+</svelte:head>
+
 {#if $navigating}
   <!-- 
     Loading animation for next page since svelte doesn't show any indicator. 
