@@ -8,7 +8,7 @@
 <svelte:head>
   <meta
     property="og:image"
-    content="https://bigjax.s3.eu-west-2.amazonaws.com/trading+course.png"
+    content="https://bigjax.s3.eu-west-2.amazonaws.com/ogimage.png"
   />
   <meta property="og:url" content="https://millionstrading.com/" />
   <meta property="og:type" content="website" />
@@ -23,7 +23,7 @@
   />
   <meta
     name="twitter:image"
-    content="https://bigjax.s3.eu-west-2.amazonaws.com/trading+course.png"
+    content="https://bigjax.s3.eu-west-2.amazonaws.com/ogimage.png"
   />
 </svelte:head>
 
