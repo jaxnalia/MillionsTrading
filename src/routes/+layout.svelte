@@ -10,8 +10,11 @@
     property="og:image"
     content="https://bigjax.s3.eu-west-2.amazonaws.com/ogimage.png"
   />
+  <meta property="og:image:width" content="1200px" />
+  <meta property="og:image:height" content="630px" />
   <meta property="og:url" content="https://millionstrading.com/" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Millions Trading Course" />
   <meta
     property="og:description"
