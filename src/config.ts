@@ -1,1 +1,1 @@
-export const WebsiteName: string = "Millions Trading"
+export const WebsiteName: string = "Millions Trading Course"
