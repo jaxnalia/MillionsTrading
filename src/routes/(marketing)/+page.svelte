@@ -10,10 +10,6 @@
 
 <svelte:head>
   <title>{WebsiteName}</title>
-  <meta
-    name="og:description"
-    content="#1 Trading Course on the Web &#9889; Supply and Demand Trading U+26A1 Liquidity Scalping 🎓 We teach you everything you need to know to become a profitable trader in 90 days"
-  />
 </svelte:head>
 
 <div class="mt-10">

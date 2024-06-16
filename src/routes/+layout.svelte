@@ -8,7 +8,22 @@
 <svelte:head>
   <meta
     property="og:image"
-    content="https://bigjax.s3.eu-west-2.amazonaws.com/millionstradingcourse.png"
+    content="https://bigjax.s3.eu-west-2.amazonaws.com/trading+course.png"
+  />
+  <meta property="og:url" content="https://millionstrading.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:title" content="Millions Trading Course" />
+  <meta
+    property="og:description"
+    content="#1 Trading Course on the Web | Supply and Demand Trading | Liquidity Scalping | We teach you everything you need to know to become a profitable trader in 90 days"
+  />
+  <meta
+    name="twitter:description"
+    content="#1 Trading Course on the Web | Supply and Demand Trading | Liquidity Scalping | We teach you everything you need to know to become a profitable trader in 90 days"
+  />
+  <meta
+    name="twitter:image"
+    content="https://bigjax.s3.eu-west-2.amazonaws.com/trading+course.png"
   />
 </svelte:head>
 
