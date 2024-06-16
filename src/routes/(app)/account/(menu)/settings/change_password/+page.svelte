@@ -84,8 +84,8 @@
       {#if usingOAuth}
         <div class="font-bold">Set Password By Email</div>
         <div>
-          You use oAuth to sign in ("Sign in with Github" or similar). You can
-          continue to access your account using only oAuth if you like!
+          You use oAuth to sign in ("Sign in with Discord"). You can continue to
+          access your account using only oAuth if you like!
         </div>
       {:else}
         <div class="font-bold">Change Password By Email</div>
