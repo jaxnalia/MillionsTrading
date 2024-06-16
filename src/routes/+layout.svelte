@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <meta property="og:image" content="../images/millionstradingcoure.png" />
+  <meta property="og:image" content="images/millionstradingcoure.png" />
 </svelte:head>
 
 {#if $navigating}
