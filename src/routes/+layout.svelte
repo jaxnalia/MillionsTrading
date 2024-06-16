@@ -5,9 +5,9 @@
   import { slide } from "svelte/transition"
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
   <meta property="og:image" content="../images/millionstradingcoure.png" />
-</svelte:head>
+</svelte:head> -->
 
 {#if $navigating}
   <!-- 
