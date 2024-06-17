@@ -20,6 +20,6 @@
 <Features />
 <!-- <Testiomonials /> -->
 <div class="mt-10">
-  <Newsletter />
+  <!-- <Newsletter /> -->
+  <!-- <FAQ /> -->
 </div>
-<FAQ />
