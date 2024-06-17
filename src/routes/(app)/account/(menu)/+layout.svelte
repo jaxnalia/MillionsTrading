@@ -69,7 +69,7 @@
             ><img
               class="h-12"
               alt="Millions Trading logo"
-              src="../../images/millionsyellow.png"
+              src="../../images/millionstradingcourse.png"
             /></a
           >
           <label for="admin-drawer" class="lg:hidden ml-3"> &#x2715; </label>

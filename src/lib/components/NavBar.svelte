@@ -9,7 +9,7 @@
         ><img
           class="h-12"
           alt="Millions Trading logo"
-          src="../../images/millionsyellow.png"
+          src="../../images/millionstradingcourse.png"
         /></a
       >
     </div>
