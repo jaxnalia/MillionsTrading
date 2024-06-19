@@ -50,6 +50,7 @@ export const load: PageServerLoad = async ({
       ],
       customer: customerId,
       mode: "subscription",
+      allow_promotion_codes: true,
       success_url: `${url.origin}/account`,
       cancel_url: `${url.origin}/account/billing`,
     })
