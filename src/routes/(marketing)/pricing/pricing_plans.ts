@@ -26,6 +26,7 @@ export const pricingPlans = [
     stripe_price_id: "price_1PS39dBdxywDdojWsj3K4W89",
     stripe_product_id: "prod_QIeRfSRNwck2Ac",
     features: [
+      "Access exclusive 1-to-1 mentorship with Jack",
       "Access to the premium trading chat",
       "Access to the premium livestreams + daily livestreams",
       
