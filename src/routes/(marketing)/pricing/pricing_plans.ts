@@ -47,6 +47,7 @@ export const pricingPlans = [
     callToAction: "Coming soon..",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
+      "Lifetime access to exclusive 1-to-1 mentorship with Jack",
       "Lifetime access to the premium trading chat",
       "Lifetime access to the premium livestreams + daily livestreams",
     ],
