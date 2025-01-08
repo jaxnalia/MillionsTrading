@@ -26,7 +26,7 @@ export const pricingPlans = [
     stripe_price_id: "price_1PS39dBdxywDdojWsj3K4W89",
     stripe_product_id: "prod_QIeRfSRNwck2Ac",
     features: [
-      "Access exclusive 1-to-1 mentorship with Jack",
+      "Access exclusive 1-to-1 mentorship",
       "Access to the premium trading chat",
       "Access to the premium livestreams + daily livestreams",
       
@@ -47,7 +47,7 @@ export const pricingPlans = [
     callToAction: "Coming soon..",
     features: [
       "80% Win Rate Trading Course (18 high quality training videos)",
-      "Lifetime access to exclusive 1-to-1 mentorship with Jack",
+      "Lifetime access to exclusive 1-to-1 mentorship",
       "Lifetime access to the premium trading chat",
       "Lifetime access to the premium livestreams + daily livestreams",
     ],
