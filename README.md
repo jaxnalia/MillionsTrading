@@ -1,6 +1,3 @@
-![SvelteShip](./static/images/favicon.svg)
-
-
 # create-svelte
 
 
