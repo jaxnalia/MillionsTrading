@@ -3,7 +3,7 @@
     {
       name: "Daily Livestream",
       description:
-        "Learn from Jack directly as he trades his winning strategy in real time, discussing trades taken or not taken.",
+        "Learn from me directly as I trade proven strategies in real time, discussing trades taken or not taken.",
       link: "/pricing",
       linkText: "Get Access",
       newPage: true,
